@@ -1,170 +1,24 @@
-$no_algos: 6;
+# Sorting_Visualizer
 
-*
-{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: large;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+A web application showcasing the inner workings of sorting algorithms.Sorting  Visualizer is a  application designed to better understand sorting algorithms by displaying and visualizing them. This repo is an attempt to help in learning popular sorting algorithms by visualization
 
-nav
-{
-    background-color: rgb(59, 58, 58);
-    color: white;
-    display: grid;
-    grid-template-columns: 30% 60%;
-    column-gap: 10%;
-    padding: 0% 5%;
-    .array-inputs
-    {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        place-content: center;
-        padding: 5% 0%;
-        
-        #a_size
-        {
-            padding: 5% 0%;
-        }
-        #a_speed
-        {
-            padding: 5% 0%;
-        }
-        #a_generate
-        {
-            background-color: transparent;
-            border: none;
-            outline: none;
-            color: white;
-            padding: 4% 0% 0% 0%;
-            padding-left: 20%;
-            &:hover
-            {
-                cursor: pointer;
-            }
-        }
-    }
-    .header_right
-    {
-        display: flex;
-        flex-direction: column;
+Implemented algorithms:
+1) Bubble sort
+2) Selection sort
+3) Insertion sort
+4) Merge sort
+5) Quick sort
+7) Heap sort
 
-        .nav-heading
-        {
-            display: inline-block;
-            //text-align: center;
-            font-size: xxx-large;
-            padding: 3% 0%;
-        }
-        .algos
-        {
-            display: grid;
-            grid-template-columns: repeat($no_algos,(100%/$no_algos));
-            place-content: center;
-            padding: 2% 0%;
-            button
-            {
-                background-color: transparent;
-                border: none;
-                color: white;
-                outline: none;
-                padding: 5% 0%;
-                font-size: x-large;
-                &:hover
-                {
-                    background-color: blue;
-                    cursor: pointer;
-                }
-            }
-
-            .butt_locked
-            {
-                background-color: transparent;
-                cursor: pointer;
-                &:hover
-                {
-                    background-color: transparent;
-                    cursor: pointer;
-                }
-            }
-            .butt_selected
-            {
-                background-color: white;
-                color:green;
-                &:hover
-                {
-                    background-color: white;
-                    cursor: pointer;
-                }
-            }
-            .butt_unselected
-            {
-                &:hover
-                {
-                    background-color: blue;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
-
-section
-{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-
-    .Complexity_Containers {
-
-        margin-top: 20%;
-
-        .Pair_Definitions {
-
-            margin-top: 20%;
-
-            p {
-                display: inline;
-            }
-
-            p.Sub_Heading {
-                font-size:medium;
-                text-transform: none;
-            }
-
-        }
-
-    }
-
-    #Info_Cont1
-    {
-        padding: 20% 10%;
-
-        h3 {
-            text-decoration: underline;
-        }
-        
-    }
-    #array_container
-    {
-        display: flex;
-        width: 100%;
-        height: 70vh;
-    }
-    #Info_Cont2
-    {
-        padding: 20% 10%;
-
-        h3 {
-            text-decoration: underline;
-        }
-
-    }
-}
-
-.hide
-{
-    display: none;
-}
+Features:
+1) Colored representation of step being executed.
+  1.1) Blue:default
+  1.2) Yellow: Being compared
+  1.3) Red: Identified as in incorrect position and to be moved
+  1.4) Green: In correct position
+2) 3 Controls for visualizations
+  2.1) Speed of visualization (5 speed levels)
+  2.2) Data size ()
+  2.3) Generation of new data (Randomly generate new data).
+4) Time and Space complexity of algorithm being visualized.
+ 
